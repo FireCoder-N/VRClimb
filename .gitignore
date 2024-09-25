@@ -1,2 +1,5 @@
 git-filter-repo
 
+*.pt
+
+__pycache__/
