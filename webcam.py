@@ -11,42 +11,6 @@ if not cap.isOpened():
     print("Cannot open camera")
     exit()
 
-# while True:
-#     # Capture frame-by-frame
-#     ret, frame = cap.read()
-
-#     print(frame.dtype)
- 
-#     # if frame is read correctly ret is True
-#     if not ret:
-#         print("Can't receive frame (stream end?). Exiting ...")
-#         break
-#     # Our operations on the frame come here
-#     gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
-#     # Display the resulting frame
-#     cv2.imshow('frame', gray)
-#     if cv2.waitKey(1) == ord('q'):
-#         break
-
-# while cap.isOpened():
-#     suc, frame = cap.read()
-
-#     if suc:
-#         if frame.dtype != np.uint8:
-#             frame = frame.astype(np.uint8)
-
-#         results = model(frame)
-
-#         annotated = results[0].plot()
-
-#         cv2.imshow("YOLOv8 Inference", annotated)
-
-#         if cv2.waitKey(1) & 0xFF == ord('q'):
-#             break
-    
-#     else:
-#         break
-
 
 ret, frame = cap.read()
 
