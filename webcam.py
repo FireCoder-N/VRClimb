@@ -3,7 +3,7 @@ from ultralytics import YOLO
 # import pyzed.sl as sl
 import numpy as np
 
-model = YOLO("yolov8n.pt")
+model = YOLO("yolov8n-seg.pt")
 cap = cv2.VideoCapture(0)
                        
 
@@ -23,18 +23,18 @@ cv2.imshow("test", frame)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
 
-frame_rgb = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
-
 if frame.dtype != np.uint8:
     frame = frame.astype(np.uint8)
 
-temp_img = "temp_frame.jpg"
-cv2.imwrite(temp_img, frame_rgb)
 
-results = model(temp_img)
-results.show()
+
+results = model(frame)
+annot = results[0].plot()
+
+cv2.imshow("YOLO", annot)
+cv2.waitKey(0)
  
 # When everything done, release the capture
 cap.release()
-# cv2.destroyAllWindows()
+cv2.destroyAllWindows()
 

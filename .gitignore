@@ -1,5 +1,6 @@
 git-filter-repo
 
 *.pt
+req.txt
 
 __pycache__/
