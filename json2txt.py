@@ -23,7 +23,7 @@ def convert_annotations(json_file):
             # Extract points and format them
             points = shape['points']
             # Flatten the points into the desired format and prepend the class index (0)
-            points_str = ' '.join([f"{x} {y}" for x, y in points])
+            points_str = ' '.join([f"{x/640.0} {y/480.0}" for x, y in points])
             out_file.write(f"0 {points_str}\n")
 
 # Process all JSON files in the input folder

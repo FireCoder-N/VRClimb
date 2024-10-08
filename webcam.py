@@ -2,8 +2,10 @@ import cv2
 from ultralytics import YOLO
 # import pyzed.sl as sl
 import numpy as np
+import torch
 
-model = YOLO("yolov8m-seg.pt")
+# model = YOLO("yolov8m-seg.pt")
+model = YOLO("6.YOLOtrain/runs/segment/train/weights/best.pt")
 cap = cv2.VideoCapture(0)
                        
 
@@ -31,9 +33,19 @@ if frame.dtype != np.uint8:
 results = model(frame)
 annot = results[0].plot()
 
-# cv2.imshow("YOLO", annot)
-cv2.imwrite("8mq-seg_pre.jpg", annot)
-# cv2.waitKey(0)
+# ==========================================
+#         edit: calculate binary mask
+# ==========================================
+masks = results[0].masks.data
+combined_mask = torch.any(masks, dim=0).int()
+
+# Convert the combined mask to 255 for visualization (binary mask)
+combined_mask = combined_mask.cpu().numpy().astype(np.uint8) * 255
+
+
+cv2.imshow("YOLO", annot)
+# cv2.imwrite("8m-seg_post_mask.jpg", combined_mask)
+cv2.waitKey(0)
  
 # When everything done, release the capture
 cap.release()

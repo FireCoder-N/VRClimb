@@ -1,7 +1,9 @@
 git-filter-repo
 
 *.pt
-YOLO_requirements.txt
-segment-anything-annotator-master/
 
+YOLO_requirements.txt
+
+runs/
+segment-anything-annotator-master/
 __pycache__/
