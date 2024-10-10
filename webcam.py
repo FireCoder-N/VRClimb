@@ -33,7 +33,7 @@ if frame.dtype != np.uint8:
 # ==========================================
 frame = cv2.imread("C:/Users/Mike/Documents/N/wall_test.jpg")
 frame = cv2.resize(frame, (640, 480))
- 
+
 results = model(frame)
 annot = results[0].plot()
 
