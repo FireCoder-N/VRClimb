@@ -1,9 +1,15 @@
 git-filter-repo
 
-*.pt
 
 YOLO_requirements.txt
 
 runs/
 segment-anything-annotator-master/
 __pycache__/
+*.cache
+
+**/images/*.png
+**/captures/*.png
+**/saves/*.json
+**/saves_txt/*.txt
+**/labels/*.txt
