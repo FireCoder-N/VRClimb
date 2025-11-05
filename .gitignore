@@ -2,11 +2,12 @@ git-filter-repo
 
 
 YOLO_requirements.txt
-
 runs/
 segment-anything-annotator-master/
+
 __pycache__/
 *.cache
+.vscode
 
 **/images/*.png
 **/captures/*.png
