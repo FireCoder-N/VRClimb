@@ -24,3 +24,9 @@
 
 ---
 
+### 4. `zed_pointcloud_stabilizer.py` — Pointcloud Stabilization, Cleaning, Visualization
+- Reiteration of zed.py, replaces image logic entirely working only in pointclouds
+- Clips Z-coordinate outliers
+- Replaces extreme values with mean depth
+- Converts NumPy → Open3D point clouds
+- Visualizes cleaned geometry
