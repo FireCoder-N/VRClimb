@@ -7,5 +7,3 @@ Following the notation of the meain documentation, as well as the Editor Utility
 - The second button (`Crop Panorama`) calls the `crop.py` file to crop the panorma into a clean image. For the cropping a simple `Tkinter` app is used.
 
 - The third button (`Generate Mesh`) executes the `auto_mesh.py` file, which -after running for a couple of minutes- utilizes yolo, MiDaS, opencv and open3d to reconstruct a mesh based on the panorama image from before
-
-*Note: In order to run this project, it is required to download the `openvr_api.dll` and place it inside the Binaries folder.*
