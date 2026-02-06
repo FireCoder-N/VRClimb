@@ -1,6 +1,6 @@
 # Οδηγίες εκτέλεσης VR Climb
 
-<img src="images/logo.png" alt="drawing" width="400"/>
+<img src="figures/logo.png" alt="drawing" width="400"/>
 
 ## Γρήγορη Περιήγηση
 1. [Εκκίνηση Εξοπλισμού](#εκκίνηση-εξοπλισμού)
@@ -61,7 +61,7 @@
 Φορέστε τους αισθητήρες στα αντίστοιχα μέλη του σώματός σας, όπως φαίνεται στις ακόλουθες
 φωτογραφίες, με το φωτάκι να βρίσκεται πάντα μπροστά.
 
-![how to wear vive trackers](images/trackers.png)
+![how to wear vive trackers](figures/trackers.png)
 
 
 > ℹ Για τους αισθητήρες των άνω άκρων, περάστε πρώτα τον αντίχειρα στο ειδικό άνοιγμα και σφίξτε
@@ -124,7 +124,7 @@ C:\Users\Mike\Documents\9.Scene\MyProject
 
 Για να διακόψετε την λειτουργία της εφαρμογής πατήστε το κουμπί esc στο πληκτρολόγιο.
 
-|![intial screen of the app](images/init_screen.png)               |
+|![intial screen of the app](figures/init_screen.png)               |
 |:----------------------------------------------------------------:|
 |Η αρχική οθόνη της εφαρμογής όπου σημειώνεται το κουμπί εκκίνησης.|
 
@@ -140,13 +140,13 @@ C:\Users\Mike\Documents\9.Scene\MyProject
 Στην οθόνη εμφανίζονται όλοι οι trackers που έχουν ανιχνευτεί, όπως φαίνεται στην ακόλουθη εικόνα. Στην συνέχεια, κουνώντας μόνο έναν tracker την φορά (από αυτούς που παρουσιάζουν πρόβλημα) μπορείτε να εντοπίσετε το ID του, το οποίο και θα πρέπει να σημειώσετε.
 
 
-| ![tracker debug menu](images/debugger.png)                       |
+| ![tracker debug menu](figures/debugger.png)                       |
 |:----------------------------------------------------------------:|
 |EUW_Debug. Έχει ενεργοποιηθεί μόνο ο tracker i (αριστερό πόδι) του οποίου το ID είναι 3. Από κάτω φαίνεται η θέση και ο προσανατολισμός του.|
 
 Στην συνέχεια, αφού καταγράψετε τα IDs όλων των trackers, κατευθυνθείτε στο αρχείο `Content Browser > 01-Blueprints > BP_VRPawn` και κάντε διπλό κλικ σε αυτό.
 
-|![snapshot of the VRPawn blueprint](images/Snapshot_BP_VRPawn.png)|
+|![snapshot of the VRPawn blueprint](figures/Snapshot_BP_VRPawn.png)|
 |:----------------------------------------------------------------:|
 |Στιγμιότυπο από το εσωτερικό του αρχείου BP_VRPawn.               |
 
@@ -158,7 +158,7 @@ C:\Users\Mike\Documents\9.Scene\MyProject
 
 Μόλις πλοηγηθείτε στο πλαίσιο `Event Tick`, το μόνο που θα πρέπει να τροποποιήσετε είναι το πεδίο `Tracker Index` όπου θα πρέπει να αναγράψετε τον αντίστοιχο αριθμό/ID του κάθε tracker, ώστε να αντιστοιχηθεί με καθένα μέλος του σώματος.
 
-|![BP_VRPawn, focus on event tick](images/event_tick.png)|
+|![BP_VRPawn, focus on event tick](figures/event_tick.png)|
 |:------------------------------------------------------:|
 |Εντός του αρχείου BP_VRPawn, στην περιοχή Event Tick τροποποιούμε το τελευταίο πλαίσιο, που αντιστοιχεί στο αριστερό πόδι, συμπληρώνοντας το προσημειωθέν ID (3).|
 
@@ -197,11 +197,11 @@ C:\Users\Mike\Documents\9.Scene\MyProject
 ### Βήμα 3 - Εκτέλεση μενού εισαγωγής στο περιβάλλον
 Ανοίξτε την Unreal Engine και στην συνέχεια τον `Content Browser` (αν δεν είναι ήδη ανοιχτός στο κάτω μέρος της οθόνης, πατήστε `ctrl+space`) και πλοηγηθείτε στον φάκελο `06-EditorUtilities`. Κάντε δεξί κλικ στο αρχείο `EUW_UI` και επιλέξτε την πρώτη ενέργεια, `Run Editor Utility Widget`.
 
-|![path for accessing the euw](images/euw_path.png)|
+|![path for accessing the euw](figures/euw_path.png)|
 |:------------------------------:|
 |Η διαδρομή για το μενού ανακατασκευής του τοίχου `Content Browser > 06-EditorUtilities > EUW_UI`.|
 
-|![Editor Utility Widget](images/euw.png)        |
+|![Editor Utility Widget](figures/euw.png)        |
 |:----------------------------------------------:|
 |Το μενού της εφαρμογής ανακατασκευής του τοίχου.|
 
