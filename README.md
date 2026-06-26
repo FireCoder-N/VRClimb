@@ -139,7 +139,7 @@ For more information you may once again consult the thesis document.
 
 ## 📋 User Evaluation
 
-The system's usability, accuarcy and appeal was evaluated through a structured user questionaire, inspired by the SUS and UEQ questionaires.
+The system's usability, accuracy and appeal was evaluated through a structured user questionaire, inspired by the SUS and UEQ questionaires.
 
 Below are presened some prominent results of the evaluation.
 
@@ -155,7 +155,7 @@ Detailed statistical analysis is available in the thesis document. A visual over
 
 This project was developed for academic and research purposes.
 
-This rpository is released under the GNU General Public License (GPL v3). Please refer to the [license file](https://github.com/FireCoder-N/VRClimb/blob/main/LICENSE) for specific licensing details.
+This repository is released under the GNU General Public License (GPL v3). Please refer to the [license file](https://github.com/FireCoder-N/VRClimb/blob/main/LICENSE) for specific licensing details.
 
 
 ### 👤 Author
